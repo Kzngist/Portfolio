@@ -1,1 +1,1 @@
-# [Portfolio Page](https://work-portfolio.kazunokokoro.com)
+# [Link to Portfolio Page](https://portfolio.kazunokokoro.com)
