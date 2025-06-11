@@ -1,11 +1,5 @@
-@import url(fontawesome-all.min.css);
+@import url(all.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
-
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2146,12 +2140,12 @@ input, select, textarea {
 		input[type="button"].small,
 		button.small,
 		.button.small {
-			font-size: 0.9rem;
-			height: 3.3em;
-			line-height: 3.2em;
+			font-size: 1.0rem;
+			height: 3.0em;
+			line-height: 2.9em;
             border-style: solid;
             border-width: 0.05em;
-            border-radius: 3.3em;
+            border-radius: 2.9em;
 			padding: 0 2em;
 		}
 
@@ -2575,13 +2569,15 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
 		}
 
 		.icon > .label {
 			display: none;
 		}
+
+        .icon.gap-after {
+            padding-right: 0.5em;
+        }
 
 		.icon:before {
 			line-height: inherit;
@@ -2592,15 +2588,15 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
+			font-family: 'Font Awesome 6 Brands';
 		}
 
 		.icon.style2:before {
-			border-radius: 2.75em;
+			border-radius: 1.85em;
 			display: inline-block;
-			height: 2.75em;
-			line-height: 2.75em;
-			width: 2.75em;
+			height: 1.85em;
+			line-height: 1.85em;
+			width: 3.25em;
 		}
 
 		.icon.major {
@@ -2797,7 +2793,7 @@ input, select, textarea {
 			-ms-flex-direction: row;
 			flex-direction: row;
             flex-wrap: wrap;
-            margin-top: 4em;
+            margin-top: 3em;
 			margin-left: 0;
             justify-content: center;
 		}
@@ -4908,22 +4904,38 @@ input, select, textarea {
 		}
 
 			.spotlight.style1 .image img {
-				-moz-object-fit: cover;
-				-webkit-object-fit: cover;
-				-ms-object-fit: cover;
-				object-fit: cover;
-				-moz-object-position: center;
-				-webkit-object-position: center;
-				-ms-object-position: center;
-				object-position: center;
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				border-radius: 0;
-			}
+                -moz-object-fit: cover;
+                -webkit-object-fit: cover;
+                -ms-object-fit: cover;
+                object-fit: cover;
+                -moz-object-position: center;
+                -webkit-object-position: center;
+                -ms-object-position: center;
+                object-position: center;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 0;
+            }
+
+            .spotlight.style1 .image video {
+                -moz-object-fit: contain;
+                -webkit-object-fit: contain;
+                -ms-object-fit: contain;
+                object-fit: contain;
+                -moz-object-position: center;
+                -webkit-object-position: center;
+                -ms-object-position: center;
+                object-position: center;
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 0;
+            }
 
 		@media screen and (max-width: 1680px) {
 
@@ -4982,7 +4994,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-				.spotlight.style1 .image img {
+				.spotlight.style1 .image :is(img,video) {
 					position: relative;
 				}
 
@@ -7227,7 +7239,7 @@ input, select, textarea {
 /* Wrapper (style1) */
 
 	.wrapper.style1 > .inner {
-		padding: 7rem 3.5rem 5rem 3.5rem ;
+		padding: 2.5rem 3.5rem 2.5rem 3.5rem ;
 		margin: 0 auto;
 		max-width: 100%;
 		width: 64rem;
