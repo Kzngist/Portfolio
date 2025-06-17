@@ -189,7 +189,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.375;
-		margin: 0.4rem 0 0.4rem 0;
+		margin: 0.2rem 0 0.2rem 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -207,19 +207,19 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 	}
 
 	h4 {
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 	}
 
 	h5 {
-		font-size: 0.9rem;
+		font-size: 1.0rem;
 	}
 
 	h6 {
-		font-size: 0.7rem;
+		font-size: 0.75rem;
 	}
 
 	sub {
@@ -284,30 +284,30 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
-
-	@media screen and (max-width: 736px) {
-
-		p.major {
-			font-size: 1.1rem;
-		}
-
-		h1 {
-			font-size: 2.5rem;
-		}
-
-		h2 {
-			font-size: 2rem;
-		}
-
-		h3 {
-			font-size: 1.25rem;
-		}
-
-		h4 {
-			font-size: 1rem;
-		}
-
-	}
+/**/
+/*	@media screen and (max-width: 736px) {*/
+/**/
+/*		p.major {*/
+/*			font-size: 1.1rem;*/
+/*		}*/
+/**/
+/*		h1 {*/
+/*			font-size: 2.5rem;*/
+/*		}*/
+/**/
+/*		h2 {*/
+/*			font-size: 2rem;*/
+/*		}*/
+/**/
+/*		h3 {*/
+/*			font-size: 1.25rem;*/
+/*		}*/
+/**/
+/*		h4 {*/
+/*			font-size: 1rem;*/
+/*		}*/
+/**/
+/*	}*/
 
 	input, select, textarea {
 		color: #000000;
@@ -318,7 +318,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #e0c182;
+			color: .#dbc28f;
 		}
 
 	strong, b {
@@ -2199,8 +2199,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #e0c182;
-			color: #e0c182 !important;
+			box-shadow: inset 0 0 0 1px .#dbc28f;
+			color: .#dbc28f !important;
 		}
 
 		input[type="submit"]:active,
@@ -2209,8 +2209,8 @@ input, select, textarea {
 		button:active,
 		.button:active {
 			background-color: rgba(224, 193, 130, 0.2);
-			box-shadow: inset 0 0 0 1px #e0c182;
-			color: #e0c182 !important;
+			box-shadow: inset 0 0 0 1px .#dbc28f;
+			color: .#dbc28f !important;
 		}
 
 		input[type="submit"].primary,
@@ -2228,7 +2228,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #e0c182;
+				background-color: .#dbc28f;
 			}
 
 			input[type="submit"].primary:active,
@@ -2499,8 +2499,8 @@ input, select, textarea {
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #e0c182;
-			box-shadow: 0 0 0 1px #e0c182;
+			border-color: .#dbc28f;
+			box-shadow: 0 0 0 1px .#dbc28f;
 		}
 
 	select {
@@ -2531,8 +2531,8 @@ input, select, textarea {
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #e0c182;
-		box-shadow: 0 0 0 1px #e0c182;
+		border-color: .#dbc28f;
+		box-shadow: 0 0 0 1px .#dbc28f;
 	}
 
 	::-webkit-input-placeholder {
@@ -2620,14 +2620,14 @@ input, select, textarea {
 	}
 
 	a.icon.style2:hover:before {
-		box-shadow: inset 0 0 0 1px #e0c182;
-		color: #e0c182;
+		box-shadow: inset 0 0 0 1px .#dbc28f;
+		color: .#dbc28f;
 	}
 
 	a.icon.style2:active:before {
 		background-color: rgba(224, 193, 130, 0.1);
-		box-shadow: inset 0 0 0 1px #e0c182;
-		color: #e0c182;
+		box-shadow: inset 0 0 0 1px .#dbc28f;
+		color: .#dbc28f;
 	}
 
 /* Image */
@@ -2699,7 +2699,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2rem 0;
+		margin: 0 0 0rem 0;
 		padding-left: 1rem;
 	}
 
@@ -2800,7 +2800,7 @@ input, select, textarea {
 
 			ul.actions.stacked li {
                 display: flex;
-				padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+				padding: 0.6rem 0.5rem 0.6rem 0.5rem;
 			}
 
 				ul.actions.stacked li:first-line {
@@ -3677,7 +3677,10 @@ input, select, textarea {
             max-height: 100%;
 			max-width: 100%;
 			background-color: inherit;
-			border-radius: 1.5rem;
+            border-style: solid;
+			border-radius: 2.5rem;
+            border-width: 0.2rem;
+            border-color: #9e8b65;
 			margin-bottom: 2rem;
 			z-index: 1;
 		}
@@ -4871,7 +4874,7 @@ input, select, textarea {
 	}
 
 		.spotlight.style1 .content {
-			padding: 4rem 7rem 4rem 7rem ;
+			padding: 3rem 6rem 3rem 6rem ;
 			-moz-align-self: center;
 			-webkit-align-self: center;
 			-ms-align-self: center;
@@ -4983,7 +4986,7 @@ input, select, textarea {
 			-webkit-flex-direction: column-reverse;
 			-ms-flex-direction: column-reverse;
 			flex-direction: column-reverse;
-			text-align: center !important;
+			text-align: left !important;
 		}
 
 			.spotlight.style1 .content {
@@ -5039,6 +5042,132 @@ input, select, textarea {
 			-ms-object-position: right;
 			object-position: right;
 		}
+
+/* Spotlight (style1m) */
+
+    .spotlight.style1m {
+        -moz-align-items: -moz-stretch;
+        -webkit-align-items: -webkit-stretch;
+        -ms-align-items: -ms-stretch;
+        align-items: stretch;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-flex-direction: row;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -moz-justify-content: -moz-flex-end;
+        -webkit-justify-content: -webkit-flex-end;
+        -ms-justify-content: -ms-flex-end;
+        justify-content: flex-end;
+        position: relative;
+        overflow-x: hidden;
+        text-align: left;
+    }
+
+    .spotlight.style1m .content {
+            padding: 3rem 6rem 3rem 6rem ;
+            -moz-align-self: center;
+            -webkit-align-self: center;
+            -ms-align-self: center;
+            align-self: center;
+            -moz-flex-grow: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-grow: 1;
+            flex-grow: 1;
+            -moz-flex-shrink: 1;
+            -webkit-flex-shrink: 1;
+            -ms-flex-shrink: 1;
+            flex-shrink: 1;
+            width: 100%;
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 1680px) {
+
+            .spotlight.style1m .content {
+                padding: 5rem 5rem 3rem 5rem ;
+            }
+
+        }
+
+        @media screen and (max-width: 1280px) {
+
+            .spotlight.style1m .content {
+                padding: 4rem 4rem 2rem 4rem ;
+            }
+
+        }
+
+        @media screen and (max-width: 980px) {
+
+            .spotlight.style1m .content {
+                padding: 3.75rem 3rem 1.75rem 3rem ;
+                min-width: 0;
+            }
+        }
+
+        @media screen and (max-width: 736px) {
+
+            .spotlight.style1m .content {
+                padding: 2.5rem 2rem 0.5rem 2rem ;
+            }
+
+        }
+
+    @media screen and (max-width: 736px) and (orientation: portrait) {
+
+        .spotlight.style1m {
+            -moz-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+            text-align: left !important;
+        }
+
+            .spotlight.style1m .content {
+                width: 100%;
+            }
+            
+            .spotlight.style1m .content :is(img,video) {
+                max-width: 100%;
+                height: auto;
+            }
+
+                .spotlight.style1m .image :is(img,video) {
+                    position: relative;
+                }
+
+    }
+
+        .spotlight.style1m.orient-right {
+            -moz-flex-direction: row-reverse;
+            -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+        }
+
+    @media screen and (max-width: 736px) and (orientation: portrait) {
+
+        .spotlight.style1m.orient-right {
+            -moz-flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+        }
+
+    }
+
+        .spotlight.style1m.content-align-center {
+            text-align: center;
+        }
+
+        .spotlight.style1m.content-align-right {
+            text-align: right;
+        }
 
 /* Spotlight (style2) */
 
@@ -5158,7 +5287,7 @@ input, select, textarea {
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
 				flex-direction: column-reverse;
-				text-align: center !important;
+				text-align: left !important;
 			}
 
 				.spotlight.style2 .content {
@@ -5412,7 +5541,7 @@ input, select, textarea {
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
 				flex-direction: column-reverse;
-				text-align: center !important;
+				text-align: left !important;
 			}
 
 				.spotlight.style3 .content {
@@ -6408,7 +6537,7 @@ input, select, textarea {
 		}
 
 			.gallery.style1 a:hover {
-				color: #e0c182;
+				color: .#dbc28f;
 			}
 
 		.gallery.style1 strong, .gallery.style1 b {
@@ -6447,8 +6576,8 @@ input, select, textarea {
 			.gallery.style1 input[type="button"]:hover,
 			.gallery.style1 button:hover,
 			.gallery.style1 .button:hover {
-				box-shadow: inset 0 0 0 1px #e0c182;
-				color: #e0c182 !important;
+				box-shadow: inset 0 0 0 1px .#dbc28f;
+				color: .#dbc28f !important;
 			}
 
 			.gallery.style1 input[type="submit"]:active,
@@ -6457,8 +6586,8 @@ input, select, textarea {
 			.gallery.style1 button:active,
 			.gallery.style1 .button:active {
 				background-color: rgba(224, 193, 130, 0.2);
-				box-shadow: inset 0 0 0 1px #e0c182;
-				color: #e0c182 !important;
+				box-shadow: inset 0 0 0 1px .#dbc28f;
+				color: .#dbc28f !important;
 			}
 
 			.gallery.style1 input[type="submit"].primary,
@@ -6476,7 +6605,7 @@ input, select, textarea {
 				.gallery.style1 input[type="button"].primary:hover,
 				.gallery.style1 button.primary:hover,
 				.gallery.style1 .button.primary:hover {
-					background-color: #e0c182;
+					background-color: .#dbc28f;
 				}
 
 				.gallery.style1 input[type="submit"].primary:active,
@@ -6732,7 +6861,7 @@ input, select, textarea {
 		}
 
 			.gallery.style2 a:hover {
-				color: #e0c182;
+				color: .#dbc28f;
 			}
 
 		.gallery.style2 strong, .gallery.style2 b {
@@ -6771,8 +6900,8 @@ input, select, textarea {
 			.gallery.style2 input[type="button"]:hover,
 			.gallery.style2 button:hover,
 			.gallery.style2 .button:hover {
-				box-shadow: inset 0 0 0 1px #e0c182;
-				color: #e0c182 !important;
+				box-shadow: inset 0 0 0 1px .#dbc28f;
+				color: .#dbc28f !important;
 			}
 
 			.gallery.style2 input[type="submit"]:active,
@@ -6781,8 +6910,8 @@ input, select, textarea {
 			.gallery.style2 button:active,
 			.gallery.style2 .button:active {
 				background-color: rgba(224, 193, 130, 0.2);
-				box-shadow: inset 0 0 0 1px #e0c182;
-				color: #e0c182 !important;
+				box-shadow: inset 0 0 0 1px .#dbc28f;
+				color: .#dbc28f !important;
 			}
 
 			.gallery.style2 input[type="submit"].primary,
@@ -6800,7 +6929,7 @@ input, select, textarea {
 				.gallery.style2 input[type="button"].primary:hover,
 				.gallery.style2 button.primary:hover,
 				.gallery.style2 .button.primary:hover {
-					background-color: #e0c182;
+					background-color: .#dbc28f;
 				}
 
 				.gallery.style2 input[type="submit"].primary:active,
@@ -7239,7 +7368,7 @@ input, select, textarea {
 /* Wrapper (style1) */
 
 	.wrapper.style1 > .inner {
-		padding: 2.5rem 3.5rem 2.5rem 3.5rem ;
+		padding: 4.5rem 3.5rem 3.0rem 3.5rem ;
 		margin: 0 auto;
 		max-width: 100%;
 		width: 64rem;
@@ -8295,7 +8424,7 @@ input, select, textarea {
 			}
 
 				#wrapper > .invert a:hover {
-					color: #e0c182;
+					color: .#dbc28f;
 				}
 
 			#wrapper > .invert strong, #wrapper > .invert b {
@@ -8338,8 +8467,8 @@ input, select, textarea {
 				#wrapper > .invert input[type="button"]:hover,
 				#wrapper > .invert button:hover,
 				#wrapper > .invert .button:hover {
-					box-shadow: inset 0 0 0 1px #e0c182;
-					color: #e0c182 !important;
+					box-shadow: inset 0 0 0 1px .#dbc28f;
+					color: .#dbc28f !important;
 				}
 
 				#wrapper > .invert input[type="submit"]:active,
@@ -8348,8 +8477,8 @@ input, select, textarea {
 				#wrapper > .invert button:active,
 				#wrapper > .invert .button:active {
 					background-color: rgba(224, 193, 130, 0.2);
-					box-shadow: inset 0 0 0 1px #e0c182;
-					color: #e0c182 !important;
+					box-shadow: inset 0 0 0 1px .#dbc28f;
+					color: .#dbc28f !important;
 				}
 
 				#wrapper > .invert input[type="submit"].primary,
@@ -8367,7 +8496,7 @@ input, select, textarea {
 					#wrapper > .invert input[type="button"].primary:hover,
 					#wrapper > .invert button.primary:hover,
 					#wrapper > .invert .button.primary:hover {
-						background-color: #e0c182;
+						background-color: .#dbc28f;
 					}
 
 					#wrapper > .invert input[type="submit"].primary:active,
@@ -8401,8 +8530,8 @@ input, select, textarea {
 				#wrapper > .invert input[type="url"]:focus,
 				#wrapper > .invert select:focus,
 				#wrapper > .invert textarea:focus {
-					border-color: #e0c182;
-					box-shadow: 0 0 0 1px #e0c182;
+					border-color: .#dbc28f;
+					box-shadow: 0 0 0 1px .#dbc28f;
 				}
 
 			#wrapper > .invert select {
@@ -8433,8 +8562,8 @@ input, select, textarea {
 
 			#wrapper > .invert input[type="checkbox"]:focus + label:before,
 			#wrapper > .invert input[type="radio"]:focus + label:before {
-				border-color: #e0c182;
-				box-shadow: 0 0 0 1px #e0c182;
+				border-color: .#dbc28f;
+				box-shadow: 0 0 0 1px .#dbc28f;
 			}
 
 			#wrapper > .invert ::-webkit-input-placeholder {
@@ -8458,14 +8587,14 @@ input, select, textarea {
 			}
 
 			#wrapper > .invert a.icon.style2:hover:before {
-				box-shadow: inset 0 0 0 1px #e0c182;
-				color: #e0c182;
+				box-shadow: inset 0 0 0 1px .#dbc28f;
+				color: .#dbc28f;
 			}
 
 			#wrapper > .invert a.icon.style2:active:before {
 				background-color: rgba(224, 193, 130, 0.1);
-				box-shadow: inset 0 0 0 1px #e0c182;
-				color: #e0c182;
+				box-shadow: inset 0 0 0 1px .#dbc28f;
+				color: .#dbc28f;
 			}
 
 			#wrapper > .invert ul.alt li {
@@ -8617,7 +8746,7 @@ input, select, textarea {
         }
 
         #wrapper > .colork2 {
-            background-color: #e8d6ae;
+            background-color: #ebdbb9;
         }
 
 		#wrapper.divided > * {
