@@ -19,11 +19,11 @@
 							<h1>Zhaoyang Zhang</h1>
 							<p class="major">Game Developer / 3D Generalist</p>
                             <ul class="actions stacked">
-                                <li><a href="#about" class="button small smooth-scroll-middle">About Me</a></li>
-                                <li><a href="#gamedev" class="button small smooth-scroll-middle">Game Projects</a></li>
-                                <li><a href="#3dgeneralist" class="button small smooth-scroll-middle">3D Content Creation</a></li>
-                                <li><a href="files/Resume.pdf" download="Resume" class="button small smooth-scroll-middle"><i class="icon gap-after fa-solid fa-file-arrow-down fa-lg"></i>Download Resume</a></li>
-                                <li><a href="#contact" class="button small smooth-scroll-middle"><i class="icon gap-after fa-solid fa-envelope fa-lg"></i>Links & Contact</a></li>
+                                <li><a href="#about" class="button small smooth-scroll">About Me</a></li>
+                                <li><a href="#gamedev" class="button small smooth-scroll">Game Projects</a></li>
+                                <li><a href="#3dgeneralist" class="button small smooth-scroll">3D Content Creations</a></li>
+                                <li><a href="files/Resume.pdf" download="Resume" class="button small smooth-scroll" target="_blank"><i class="icon gap-after fa-solid fa-file-arrow-down fa-lg"></i>Download Resume</a></li>
+                                <li><a href="#contact" class="button small smooth-scroll"><i class="icon gap-after fa-solid fa-envelope fa-lg"></i>Links & Contact</a></li>
                             </ul>
 						</div>
 						<div class="image">
@@ -32,7 +32,13 @@
 					</section>
 
 				<!-- About -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in colork2" id="about">
+                    <section class="wrapper style1 align-center colork3 invert" id="about">
+                        <div class="inner">
+                            <h2>»»» About «««</h2>
+                        </div>
+                    </section>
+                
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in colork2">
 						<div class="content">
 							<h2>About Me</h2>
 							<p>I have been a video gamer since before I went to kindergarten. Being passionate about the whole gaming industry, I started my journey as a game developer in early 2018, and have created games of various genres using Unity.
@@ -45,86 +51,50 @@
                             <p>Bachelor of Science (Honours) - Computer Science, Brock University</br></p>
 						</div>
 						<div class="image">
-							<img src="images/portfolio_portrait.jpeg" alt="" />
+							<img src="images/Portfolio_Portrait.jpeg" alt="" />
 						</div>
 					</section>
                     
                 <!-- Game Development -->
-                    <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in colork" id="gamedev">
+                <section class="wrapper style1 align-center colork3 invert" id="gamedev">
+                    <div class="inner">
+                        <h2>»»» GameDev «««</h2>
+                    </div>
+                </section>
+                
+                    <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in colork">
                         <div class="content">
-                            <h2>Game Projects</h2>
+                            <h2>Featured Project</h2>
                             <p>
-                                <a href="replika-bobble.html"><strong>RepliKa: Bobble (Mar 2025 - Apr 2025)</strong></a>
-                                </br>Mobile game application released on Apple AppStore.
-                                </br>A ground up recreation of classic bust-a-move game Puzzle Bobble using Unity and Blender, developed and shipped solo.
-                                </br>
-                                </br><a href="chatbot.html"><strong>AI Chatbot Prototypes for Niagara Summer Games (2022)</strong></a>
-                                </br>University project. Two separate software chatbot applications, designed for asking general information and guidance on Brock University or Niagara Summer Games.
-                                </br>As a cooperative project, I was tasked to interpret user inputs by training a prediction model with natural language processing, and generate responses based on the information queried.
-                                
-                                NLTK Specialist
-                                - Configuration of Preliminary NTLK settings.
-                                - Worked on NTLK processing to work with small brock university sample database.
-                                
-<!--                                NLTK-->
-<!--                                Training-->
-<!--                                The NLP is trained using TensorFlow so that it can predicate user intents in a dynamic environment.-->
-<!--                                Training data is consisted of topics (intents) and patterns (possible user inputs). Every topic in the-->
-<!--                                training data corresponds to a bunch of patterns. The patterns are filtered (lemmatized, lowercased, and-->
-<!--                                special characters are deleted) and tokenized into lists of words. Each word list has its corresponding-->
-<!--                                topic. The bot is trained over epochs so that it can get the user’s intents as precisely as possible. The-->
-<!--                                more diverse data it has for training, the more likely it will get the true intent of the user.-->
-<!--                                -->
-<!--                                Predicting user intents-->
-<!--                                To predict the user’s intents, the program first tokenizes the message given by the user into a bag of-->
-<!--                                words, where the words are lemmatized and special characters are ignored. Using the TensorFlow-->
-<!--                                model generated by the training process, the program tries to match possible intents that passes a-->
-<!--                                certain error threshold. The results are then sorted by confidence and the most fit one is picked for the-->
-<!--                                response generation.-->
-<!--                                -->
-<!--                                Response generation-->
-<!--                                In cases like greetings or asking for a website, the database part is skipped entirely, as the responses-->
-<!--                                from the bot will not include anything queried from the database. In such cases, a random response is-->
-<!--                                picked from the predefined response list for the topic.-->
-<!--                                On the other hand, in cases such as asking for information about a course, we first try to get the course-->
-<!--                                code by matching a regex (regular expression) pattern. We then use the course code to query relevant-->
-<!--                                information from the database and finally, compose them into a complete sentence based on how the-->
-<!--                                user asks the question.-->
-<!--                                -->
-<!--                                intents training words-->
-                                </br>
-                                </br><a href="chess2020.html"><strong>Chess 2020 (2020)</strong></a>
-                                </br>A classic chess game made from scratch implementing combined computational algorithms. 100% original code.
+                            <a href="replika-bobble.html"><h3>RepliKa: Bobble (Mar 2025 - Apr 2025)</h3></a>
+                                <ul>
+                                    <li>Mobile game application released on iOS AppStore.</li>
+                                    <li>A ground up recreation of classic bust-a-move game (Puzzle Bobble) using Unity and Blender.</li>
+                                    <li>Solo development, from designing to shipping.</li>
+                                </ul>
+                                <a href="replika-bobble.html" class="button regular" target="_blank">Learn More</a>
                             </p>
                         </div>
                         <div class="image">
-                            <img src="images/RepliKa-Bobble_Icon_2k.png" alt="" />
+                            <a href="replika-bobble.html" target="_blank">
+                                <img src="images/RepliKa-Bobble_Icon_2k.png" alt="" />
+                            </a>
                         </div>
+                        
                     </section>
-
-				<!-- 3D Content Creation -->
-                    <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in colork2" id="3dgeneralist">
-						<div class="content">
-							<h2>3D Content Creation</h2>
-                            <p>I am a 3D generalist capable of detailed and comprehensive modeling, sculpting and retopology, traditional and procedual texturing, hair combing, shading, character design, character rigging and animation, game implementation, UI design, compositing...</p>
-                            <h3>Demo Reel:</h3>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/E3FNVrsUX8o?si=PaUJlu2aadYnOIh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-						</div>
-						<div class="image">
-							<img src="images/Sister_Render_2k.png" alt="" />
-						</div>
-					</section>
                     
-                <!-- WIP -->
-                    <section class="wrapper style1 align-center colork" id="screenshots">
+                <!-- Screenshots -->
+                    <section class="wrapper style1 align-center colork2" id="gamescreenshots">
                         <div class="inner">
-                            <h2>WIP</h2>
+                            <h2>Things I Have Made</h2>
                         </div>
                         
                         <div class="gallery style1 medium lightbox onscroll-fade-in">
                             <article>
-                                <a href="images/RepliKa-Bobble_ScreenShot_7_4k.png" class="image">
-                                    <img src="images/RepliKa-Bobble_ScreenShot_7_1k.png" alt="" />
+                                <a href="videos/RepliKa-Bobble_Reel_Web.mp4" class="image">
+                                    <video src="videos/RepliKa-Bobble_Reel_Thumbnail.mp4" autoplay loop muted>
+                                      Your browser does not support the video tag.
+                                    </video>
                                 </a>
                                 <div class="caption">
                                     <ul class="actions fixed">
@@ -133,8 +103,10 @@
                                 </div>
                             </article>
                             <article>
-                                <a href="images/RepliKa-Bobble_ScreenShot_8_4k.png" class="image">
-                                    <img src="images/RepliKa-Bobble_ScreenShot_8_1k.png" alt="" />
+                                <a href="videos/Breaka_Web.mp4" class="image">
+                                    <video src="videos/Breaka_Thumbnail.mp4" autoplay loop muted>
+                                      Your browser does not support the video tag.
+                                    </video>
                                 </a>
                                 <div class="caption">
                                     <ul class="actions fixed">
@@ -143,8 +115,58 @@
                                 </div>
                             </article>
                             <article>
-                                <a href="images/RepliKa-Bobble_ScreenShot_1_4k.png" class="image">
-                                    <img src="images/RepliKa-Bobble_ScreenShot_1_1k.png" alt="" />
+                                <a href="videos/Chess2020_Web.mp4" class="image">
+                                    <video src="videos/Chess2020_Thumbnail.mp4" autoplay loop muted>
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                                <div class="caption">
+                                    <ul class="actions fixed">
+                                        <li><span class="button small">View</span></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="videos/HexMapEditor_Web.mp4" class="image">
+                                    <video src="videos/HexMapEditor_Thumbnail.mp4" autoplay loop muted>
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                                <div class="caption">
+                                    <ul class="actions fixed">
+                                        <li><span class="button small">View</span></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="videos/KentBall_Web.mp4" class="image">
+                                    <video src="videos/KentBall_Thumbnail.mp4" autoplay loop muted>
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                                <div class="caption">
+                                    <ul class="actions fixed">
+                                        <li><span class="button small">View</span></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="videos/SignE_Web.mp4" class="image">
+                                    <video src="videos/SignE_Thumbnail.mp4" autoplay loop muted>
+                                      Your browser does not support the video tag.
+                                    </video>
+                                </a>
+                                <div class="caption">
+                                    <ul class="actions fixed">
+                                        <li><span class="button small">View</span></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="videos/VFXGraph_Web.mp4" class="image">
+                                    <video src="videos/VFXGraph_Thumbnail.mp4" autoplay loop muted>
+                                      Your browser does not support the video tag.
+                                    </video>
                                 </a>
                                 <div class="caption">
                                     <ul class="actions fixed">
@@ -155,40 +177,97 @@
                         </div>
                         
                     </section>
-                    
 
-				<!-- WIP -->
-					<section class="wrapper style1 align-center colork2">
-						<div class="inner">
-							<h2>WIPWIP</h2>
-							<p>WIPWIPWIPWIPWIPWIPWIPWIPWIP</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>WIP</h3>
-									<p>WIPWIPWIPWIPWIPWIPWIP</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-                                    <h3>WIP</h3>
-                                    <p>WIPWIPWIPWIPWIPWIPWIP</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-                                    <h3>WIP</h3>
-                                    <p>WIPWIPWIPWIPWIPWIPWIP</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-                                    <h3>WIP</h3>
-                                    <p>WIPWIPWIPWIPWIPWIPWIP</p>
-								</section>
-							</div>
+				<!-- 3D Content Creation -->
+                <section class="wrapper style1 align-center colork3 invert" id="3dgeneralist">
+                    <div class="inner">
+                        <h2>»»» 3D Stuff «««</h2>
+                    </div>
+                </section>
+                
+                    <section class="spotlight style1m orient-right content-align-left image-position-center onscroll-image-fade-in colork">
+						<div class="content">
+							<h2>3D Content Creations</h2>
+                            <p>I am a 3D generalist capable of detailed and comprehensive modeling, sculpting and retopology, traditional and procedual texturing, hair combing, shading, character design, character rigging and animation, game implementation, UI design, compositing...</p>
+                            <h3>Demo Reel:</h3>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/E3FNVrsUX8o?si=PaUJlu2aadYnOIh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</div>
 					</section>
                     
+                <!-- Screenshots -->
+                    <section class="wrapper style1 align-center colork2" id="3dscreenshots">
+                        <div class="inner">
+                            <h2>Creation Highlights</h2>
+                        </div>
+                        
+                        <div class="gallery style1 medium lightbox onscroll-fade-in">
+                            <article>
+                                <a href="images/Portfolio_Cover_2k.png" class="image">
+                                    <img src="images/Portfolio_Cover_1k.png" alt="" />
+                                </a>
+                                <div class="caption">
+                                    <ul class="actions fixed">
+                                        <li><span class="button small">View</span></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="images/Sister_Render_2k.png" class="image">
+                                    <img src="images/Sister_Render_1k.png" alt="" />
+                                </a>
+                                <div class="caption">
+                                    <ul class="actions fixed">
+                                        <li><span class="button small">View</span></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="images/Sister_Eye_2k.png" class="image">
+                                    <img src="images/Sister_Eye_1k.png" alt="" />
+                                </a>
+                                <div class="caption">
+                                    <ul class="actions fixed">
+                                        <li><span class="button small">View</span></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="images/Skull_Render_2k.png" class="image">
+                                    <img src="images/Skull_Render_1k.png" alt="" />
+                                </a>
+                                <div class="caption">
+                                    <ul class="actions fixed">
+                                        <li><span class="button small">View</span></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="images/Kiriko_Render_2k.png" class="image">
+                                    <img src="images/Kiriko_Render_1k.png" alt="" />
+                                </a>
+                                <div class="caption">
+                                    <ul class="actions fixed">
+                                        <li><span class="button small">View</span></li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article>
+                                <a href="images/TheArrow_Render_2k.png" class="image">
+                                    <img src="images/TheArrow_Render_1k.png" alt="" />
+                                </a>
+                                <div class="caption">
+                                    <ul class="actions fixed">
+                                        <li><span class="button small">View</span></li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        
+                    </section>
+                        
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center colork" id="contact">
+                        </br>
 						<div class="inner">
 							<ul class="icons">
                                 <li><a href="https://www.artstation.com/kazunegoist" target="_blank" class="icon brands style2 fa-brands fa-artstation fa-lg"><span class="label">ArtStation</span></a></li>
